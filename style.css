@@ -1,0 +1,269 @@
+/* Общий стиль для всего сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Заголовок сайта */
+header {
+    background: url('images/college16.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content {
+    text-align: center;
+    flex-grow: 1; /* Позволяет тексту занимать доступное пространство */
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header-content p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Иконки социальных сетей */
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #66a3ff;
+}
+
+/* Навигационное меню */
+nav {
+    background: #0044cc;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66a3ff;
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main h2 {
+    color: #0044cc;
+    border-bottom: 2px solid #66a3ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin-bottom: 15px;
+}
+
+main ul {
+    list-style: disc inside;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* Контакты */
+#contacts p {
+    margin: 5px 0;
+}
+
+/* Страница Связаться с нами */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Поля ввода для имени и email */
+#contact-form input[type="text"],
+#contact-form input[type="email"] {
+    width: 100%;
+}
+
+#contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0044cc;
+}
+
+/* Текстовое поле для сообщения */
+#contact-form textarea {
+    width: 100%;
+    height: 150px;
+}
+
+/* Кнопка отправки */
+#contact-form button {
+    padding: 10px;
+    background-color: #0044cc;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #66a3ff;
+}
+
+/* Подвал сайта */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 25px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content {
+        margin-bottom: 10px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+/* Стили для слайдера */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Ограничение ширины слайдера */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    max-height: 500px;
+}
+
+.slider-images img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Стили для активного состояния кнопок */
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}

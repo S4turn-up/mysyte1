@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колледж №16</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение Font Awesome для иконок социальных сетей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Заголовок сайта -->
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <h1>Добро пожаловать в «Колледж №16»</h1>
+                <p>Ваш путь к успешному будущему</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@college16" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/college16" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/c/college16" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигационное меню -->
+    <nav>
+        <ul>
+            <li><a href="#about">О колледже</a></li>
+            <li><a href="#programs">Программы</a></li>
+            <li><a href="#students">Студенческая жизнь</a></li>
+            <li><a href="#news">Новости</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <!-- Кнопка для перехода на страницу "Связаться с нами" -->
+            <li><a href="contact.html">Связаться с нами</a></li>
+        </ul>
+    </nav>
+
+    <!-- Основное содержимое -->
+    <main>
+        <section id="about">
+            <h2>О колледже</h2>
+            <p>Колледж №16 — это современное учебное заведение, которое предлагает качественное образование в различных областях. Наша миссия — подготовить студентов к успешной карьере и личностному росту.</p>
+        </section>
+        
+        <!-- Слайдер -->
+        <section id="slider">
+            <h2>Фотогалерея</h2>
+            <div class="slider">
+                <div class="slider-images">
+                    <div class="slide">
+                        <img src="images/slide1.jpeg" alt="Изображение 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide2.jpeg" alt="Изображение 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide3.jpeg" alt="Изображение 3">
+                    </div>
+					<div class="slide">
+                        <img src="images/slide4.jpeg" alt="Изображение 4">
+						</div>
+					<div class="slide">
+                        <img src="images/slide5.jpeg" alt="Изображение 5">
+                    </div>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        
+        <section id="programs">
+            <h2>Образовательные программы</h2>
+            <ul>
+                <li>Программирование и разработка ПО</li>
+                <li>Дизайн и мультимедиа</li>
+                <li>Управление бизнесом</li>
+                <li>Инженерные специальности</li>
+            </ul>
+        </section>
+        <section id="students">
+            <h2>Студенческая жизнь</h2>
+            <p>В колледже №16 студенты могут участвовать в различных культурных и спортивных мероприятиях, а также в клубах по интересам. Мы активно поддерживаем творческие инициативы и развиваем лидерские качества у студентов.</p>
+        </section>
+        <section id="news">
+            <h2>Новости</h2>
+            <ul>
+                <li><a href="#">Новый набор студентов на 2025 год</a></li>
+                <li><a href="#">Конкурс проектов по программированию</a></li>
+                <li><a href="#">Спортивные мероприятия колледжа</a></li>
+            </ul>
+        </section>
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Адрес: былмим, Быр Жерде</p>
+            <p>Телефон: +7 (747) 452-33-67 (каспи)</p>
+            <p>Email: kaspi500@salsai.com</p>
+        </section>
+        <section id="reviews">
+            <h2>Отзывы</h2>
+            <p>Наши студенты и выпускники оставляют положительные отзывы о колледже, отмечая высокое качество образования и дружелюбную атмосферу. Вот что они говорят:</p>
+            <ul>
+                <li>«Колледж №16 — отличное место для старта карьеры!»</li>
+                <li>«Здесь я не только научился многому, но и завел хорошие знакомства!»</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Колледж №16. Все права защищены.</p>
+    </footer>
+
+    <script src="slider.js"></script>
+</body>
+</html>
